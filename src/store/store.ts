@@ -1,6 +1,10 @@
 import { createStore } from 'vuex'
 
-export default createStore({
+export interface State {
+
+}
+
+export const store = createStore<State>({
   state: {
   },
   getters: {
