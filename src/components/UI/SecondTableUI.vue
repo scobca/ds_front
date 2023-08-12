@@ -37,6 +37,18 @@ export default class SecondTableUI extends Vue {
           ready: 0.5,
           fact: 5,
         },
+        {
+          full_name: 'Иванов Иван Иванович',
+          hours: 10,
+          ready: 0.5,
+          fact: 5,
+        },
+        {
+          full_name: 'Иванов Иван Иванович',
+          hours: 10,
+          ready: 0.5,
+          fact: 5,
+        },
     ]
 }
 </script>

@@ -4,6 +4,7 @@
         <TableSelector class="table_selector_container"/>
         <FirstTableUI v-if="this.$route.name == 'FHome'"/>
         <SecondTableUI v-if="this.$route.name == 'SHome'"/>
+        <ThirdTableUI v-if="this.$route.name == 'THome'"/>
     </div>
     <div class="graphic_container">
         <p>graphic</p>
@@ -16,10 +17,11 @@ import { Options, Vue } from 'vue-class-component';
 import FirstTableUI from "@/components/UI/FirstTableUI.vue";
 import SecondTableUI from "@/components/UI/SecondTableUI.vue";
 import TableSelector from "@/components/UI/TableSelector.vue";
+import ThirdTableUI from "@/components/UI/ThirdTableUI.vue";
 
 @Options({
     name: 'HomeView',
-    components: {TableSelector, SecondTableUI, FirstTableUI}
+    components: {ThirdTableUI, TableSelector, SecondTableUI, FirstTableUI}
 })
 export default class HomeView extends Vue {
 
