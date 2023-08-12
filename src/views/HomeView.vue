@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="table_container">
-        <p>table</p>
+        <FirstTableUI/>
     </div>
     <div class="graphic_container">
         <p>graphic</p>
@@ -11,10 +11,11 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import FirstTableUI from "@/components/UI/FirstTableUI.vue";
 
 @Options({
     name: 'HomeView',
-    components: {},
+    components: {FirstTableUI}
 })
 export default class HomeView extends Vue {
 
