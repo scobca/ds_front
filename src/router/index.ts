@@ -5,17 +5,26 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/home/first',
         name: 'FHome',
-        component: () => import('@/views/HomeView.vue')
+        component: () => import('@/views/HomeView.vue'),
+        meta: {
+            graph: true
+        }
     },
     {
         path: '/home/second',
         name: 'SHome',
-        component: () => import('@/views/HomeView.vue')
+        component: () => import('@/views/HomeView.vue'),
+        meta: {
+            graph: true
+        }
     },
     {
         path: '/home/third',
         name: 'THome',
-        component: () => import('@/views/HomeView.vue')
+        component: () => import('@/views/HomeView.vue'),
+        meta: {
+            graph: false
+        }
     },
 ]
 

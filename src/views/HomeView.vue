@@ -6,8 +6,8 @@
         <SecondTableUI v-if="this.$route.name == 'SHome'"/>
         <ThirdTableUI v-if="this.$route.name == 'THome'"/>
     </div>
-    <div class="graphic_container">
-        <p>graphic</p>
+    <div class="graphic_container ">
+        <p v-if="this.$route.meta.graph == true">graphic</p>
     </div>
 </div>
 </template>
