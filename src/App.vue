@@ -1,14 +1,12 @@
 <template>
-<div class="container">
-    <div class="menu">
-        <LeftBar/>
+    <div class="container">
+        <div class="menu">
+            <LeftBar/>
+        </div>
+        <div class="router_container">
+            <router-view/>
+        </div>
     </div>
-    <div class="router_container">
-        <router-view/>
-    </div>
-</div>
-
-    <BarChart class="chart"/>
 </template>
 
 <script lang="ts">
@@ -18,11 +16,10 @@ import LeftBar from "@/components/UI/LeftBar.vue";
 import CoolButton from "@/components/UI/CoolButton.vue";
 import CoolInput from "@/components/UI/CoolInput.vue";
 import ButtonSelector from "@/components/UI/ButtonSelector.vue";
-import BarChart from "@/components/UI/chart/BarChart.vue";
 
 @Options({
     name: 'App',
-    components: {BarChart, ButtonSelector, CoolInput, CoolButton, LeftBar},
+    components: {ButtonSelector, CoolInput, CoolButton, LeftBar},
 })
 export default class App extends Vue {
 
@@ -49,8 +46,5 @@ export default class App extends Vue {
     position: sticky;
     top: 0;
     height: 100vh;
-}
-
-.chart {
 }
 </style>
