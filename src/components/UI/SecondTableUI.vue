@@ -42,45 +42,32 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
     components: {Bar},
 })
 export default class SecondTableUI extends Vue {
+    selectedUser = 'Иванов Иван Иванович'
+    plan = 100
+    ready = 0.5
+    fact = 50
+
     items = [
         {
-          full_name: 'Иванов Иван Иванович',
-          plan: 10,
-          ready: 0.5,
-          fact: 5,
-        },
-        {
-          full_name: 'Иванов Иван Иванович',
-          plan: 124,
-          ready: 0.5,
-          fact: 54,
-        },
-        {
-          full_name: 'Иванов Иван Иванович',
-          plan: 211,
-          ready: 0.5,
-          fact: 100,
-        },
-        {
-          full_name: 'Иванов Иван Иванович',
-          plan: 100,
-          ready: 0.5,
-          fact: 80,
-        },
+          full_name: this.selectedUser,
+          plan: this.plan,
+          ready: this.ready,
+          fact: this.fact,
+        }
     ]
 
     chartData: any = {
-        labels: ['1', '2', '3', '4'],
+        labels: [`Выбранный пользователь: ${this.selectedUser}`],
         datasets: [
             {
                 label: 'План часов',
                 backgroundColor: "rgb(169,113,229)",
-                data: [this.items[0].plan, this.items[1].plan, this.items[2].plan, this.items[3].plan]
+                data: [this.items[0].plan]
             },
             {
                 label: 'Факт часов',
                 backgroundColor: "rgb(203,61,88)",
-                data: [this.items[0].fact, this.items[1].fact, this.items[2].fact, this.items[3].fact],
+                data: [this.items[0].fact],
             },
         ]
     }
