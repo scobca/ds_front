@@ -47,6 +47,15 @@ export default class SecondTableUI extends Vue {
     ready = 0.5
     fact = 50
 
+    updated() {
+        this.getName()
+        console.log(this.selectedUser)
+    }
+
+    getName() {
+        return this.selectedUser = this.$store.getters.getName
+    }
+
     items = [
         {
           full_name: this.selectedUser,

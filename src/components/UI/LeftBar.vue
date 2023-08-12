@@ -4,7 +4,7 @@
         <div class="buttons_container">
             <div class="block">
                 <h4 class="block_header">Ваше ФИО</h4>
-                <CoolInput :placeholder="'ФИО'" class="input"/>
+                <CoolInput :placeholder="'ФИО'" class="input" v-model="this.name" @input="addName"/>
             </div>
             <div class="block">
                 <h4 class="block_header">Начало периода</h4>
@@ -44,8 +44,13 @@ import VueDatePicker from '@vuepic/vue-datepicker';
     components: {CoolInput, ButtonSelector, VueDatePicker}
 })
 export default class LeftBar extends Vue {
+    name = ''
     startData: number | null = null
     endData: number | null = null
+
+    addName() {
+        this.$store.commit('addName', this.name)
+    }
 }
 </script>
 
