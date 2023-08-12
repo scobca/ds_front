@@ -2,7 +2,6 @@
 <div class="container">
     <div class="menu">
         <LeftBar/>
-        <cool-input/>
     </div>
     <div class="router_container">
         <router-view/>
@@ -16,10 +15,11 @@ import {Options, Vue} from "vue-class-component";
 import LeftBar from "@/components/UI/LeftBar.vue";
 import CoolButton from "@/components/UI/CoolButton.vue";
 import CoolInput from "@/components/UI/CoolInput.vue";
+import ButtonSelector from "@/components/UI/ButtonSelector.vue";
 
 @Options({
     name: 'App',
-    components: {CoolInput, CoolButton, LeftBar},
+    components: {ButtonSelector, CoolInput, CoolButton, LeftBar},
 })
 export default class App extends Vue {
 
