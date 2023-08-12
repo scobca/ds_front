@@ -14,9 +14,9 @@ import * as directives from 'vuetify/directives'
 import 'animate.css'
 
 //styles
-// import '@/assets/styles/global_classes.css'
+import '@/assets/css/global_classes.css'
 import '@/assets/css/main.css'
-// import '@/assets/styles/colors.css'
+import '@/assets/css/colors.css'
 
 const vuetify = createVuetify({
     components,
