@@ -36,6 +36,7 @@ export default class HomeView extends Vue {
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    margin: 10rem auto;
 }
 
 .table_selector_container {
