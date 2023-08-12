@@ -1,6 +1,11 @@
 <template>
 <div class="container">
-    <p>HomeView</p>
+    <div class="table_container">
+        <p>table</p>
+    </div>
+    <div class="graphic_container">
+        <p>graphic</p>
+    </div>
 </div>
 </template>
 
@@ -15,3 +20,11 @@ export default class HomeView extends Vue {
 
 }
 </script>
+
+<style scoped>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+</style>
