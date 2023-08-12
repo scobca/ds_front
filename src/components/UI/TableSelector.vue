@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="button_container">
-            <CoolButton class="button">План-факта выполнения операций</CoolButton>
-            <CoolButton class="button">План-факта выполнения операций</CoolButton>
-            <CoolButton class="button">Процент распределения сотрудников по операциям</CoolButton>
+            <CoolButton class="button" @click="this.$router.push({name: 'FHome'})">План-факта выполнения операций</CoolButton>
+            <CoolButton class="button" @click="this.$router.push({name: 'SHome'})">План-факта выполнения операций</CoolButton>
+            <CoolButton class="button" @click="this.$router.push({name: 'THome'})">Процент распределения сотрудников по операциям</CoolButton>
         </div>
     </div>
 </template>
