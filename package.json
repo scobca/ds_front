@@ -9,8 +9,10 @@
   "dependencies": {
     "@vuepic/vue-datepicker": "^5.4.0",
     "animate.css": "^4.1.1",
+    "chart.js": "^4.3.3",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-chartjs": "^5.2.0",
     "vue-class-component": "^8.0.0-0",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^4.0.3",
