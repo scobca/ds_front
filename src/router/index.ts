@@ -1,4 +1,5 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
+import {fi} from "vuetify/locale";
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -21,6 +22,13 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
     routes
+})
+
+router.beforeEach((to, from) => {
+    //checking a location on a non-existent 'home' route
+    if (to.path == '/')
+       router.push({name: 'FHome'})
+           .then(r => {})
 })
 
 export default router
